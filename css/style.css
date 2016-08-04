@@ -3,4 +3,7 @@
  */
 body{
 	background-image: url(http://source.timekey.top/first_bg.jpg);
+	
 }
+/*首页*/
+.img-list img{width: 100%;}
