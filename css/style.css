@@ -8,6 +8,8 @@ body{
 	background-image: url(http://source.timekey.top/first_bg.jpg);
 	font-family: "microsoft yahei"
 }
+/*底部*/
+.footer{background-color: #E7E7E7;margin-bottom: -15px;}
 /*首页*/
 .img-list img{width: 100%; }
 .img-span{position: relative;background-color: #e7e7e7; line-height: 32px; padding-left: 10px; border-radius: 5%; color: #777;}
@@ -15,4 +17,5 @@ body{
 .img-span .like{position: absolute; right: 110px;}
 .img-span .time{position: absolute; right: 5px;}
 .list-view{margin-top: 10px;}
+
 
