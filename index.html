@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js" ></script>
 	</head>
 	<body>
 		<header>
@@ -55,8 +56,9 @@
         		</div>
         </section>
         <section class="container">
-        	<div class="row">
-        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        	<div class="row grid">
+        		<div class="grid-sizer col-lg-3 col-md-3 col-sm-6 col-xs-10"></div>
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
         				<div class="img-list">
         					<img src="http://source.timekey.top/list-1.jpg"/>
         					<div class="img-span">
@@ -66,7 +68,7 @@
         					</div>
         			</div>
         		</div>
-        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
         				<div class="img-list">
         					<img src="http://source.timekey.top/list-2.jpg"/>
         					<div class="img-span">
@@ -76,7 +78,7 @@
         					</div>
         				</div>
         		</div>
-        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
         				<div class="img-list">
         					<img src="http://source.timekey.top/list-3.jpg"/>
         					<div class="img-span">
@@ -86,7 +88,7 @@
         					</div>
         				</div>
         		</div>
-        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
         				<div class="img-list">
         					<img src="http://source.timekey.top/list-4.jpg"/>
         					<div class="img-span">
@@ -96,8 +98,64 @@
         					</div>
         				</div>
         		</div>
+        		<!--
+                	作者：lewis922@163.com
+                	时间：2016-08-05
+                	描述：line2
+                -->
+                
+                <div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        				<div class="img-list">
+        					<img src="http://source.timekey.top/list-1.jpg"/>
+        					<div class="img-span">
+        						<span class="user"><i class="glyphicon glyphicon-user"></i>  Atom</span>
+        						<span class="like"><i class="glyphicon glyphicon-heart"></i></span>
+        						<span class="time"><i class="glyphicon glyphicon-time"></i>2016-08-04</span>
+        					</div>
+        			</div>
+        		</div>
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        				<div class="img-list">
+        					<img src="http://source.timekey.top/list-2.jpg"/>
+        					<div class="img-span">
+        						<span class="user"><i class="glyphicon glyphicon-user"></i>  Atom</span>
+        						<span class="like"><i class="glyphicon glyphicon-heart"></i></span>
+        						<span class="time"><i class="glyphicon glyphicon-time"></i>2016-08-04</span>
+        					</div>
+        				</div>
+        		</div>
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        				<div class="img-list">
+        					<img src="http://source.timekey.top/list-3.jpg"/>
+        					<div class="img-span">
+        						<span class="user"><i class="glyphicon glyphicon-user"></i>  Atom</span>
+        						<span class="like"><i class="glyphicon glyphicon-heart"></i></span>
+        						<span class="time"><i class="glyphicon glyphicon-time"></i>2016-08-04</span>
+        					</div>
+        				</div>
+        		</div>
+        		<div class="grid-item col-lg-3 col-md-3 col-sm-6 col-xs-10">
+        				<div class="img-list">
+        					<img src="http://source.timekey.top/list-4.jpg"/>
+        					<div class="img-span">
+        						<span class="user"><i class="glyphicon glyphicon-user"></i>  Atom</span>
+        						<span class="like"><i class="glyphicon glyphicon-heart"></i></span>
+        						<span class="time"><i class="glyphicon glyphicon-time"></i>2016-08-04</span>
+        					</div>
+        				</div>
+        		</div>
+                
         	</div>
         </section>
+        
+        
+<script>
+	$('.grid').masonry({
+  itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+</script>
         <!--
         	作者：lewis922@163.com
         	时间：2016-08-04
